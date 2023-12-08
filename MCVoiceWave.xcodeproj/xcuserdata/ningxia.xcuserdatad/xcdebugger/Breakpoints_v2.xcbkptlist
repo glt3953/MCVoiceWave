@@ -92,8 +92,8 @@
             filePath = "MCVoiceWave/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "-voiceWaveView2"
             landmarkType = "7">
             <Locations>
@@ -127,55 +127,38 @@
                   endingLineNumber = "142"
                   offsetFromSymbolStart = "38">
                </Location>
+               <Location
+                  uuid = "E1755BF0-27BF-4A35-B74B-42BA9976DD85 - 2e54e5003cc0e946"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController voiceWaveView2]"
+                  moduleName = "MCVoiceWave"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ningxia/glt3953&apos;s%20Github/MCVoiceWave/MCVoiceWave/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "38">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CD006C33-AB70-42F5-82A9-1C22E14E00FA"
+            uuid = "5D5E4631-6119-482A-8F7B-9D1D83A7C846"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MCVoiceWave/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "-voiceWaveShowButtonTouched:"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "-voiceWaveParentView2"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CD006C33-AB70-42F5-82A9-1C22E14E00FA - ac28ba344d57e679"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController voiceWaveShowButtonTouched:]"
-                  moduleName = "MCVoiceWave"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ningxia/glt3953&apos;s%20Github/MCVoiceWave/MCVoiceWave/ViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "617">
-               </Location>
-               <Location
-                  uuid = "CD006C33-AB70-42F5-82A9-1C22E14E00FA - 392decce8560cb8e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController setupRecorder]"
-                  moduleName = "MCVoiceWave"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ningxia/glt3953&apos;s%20Github/MCVoiceWave/MCVoiceWave/ViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "90">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

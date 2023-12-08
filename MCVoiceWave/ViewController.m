@@ -17,6 +17,8 @@
 @property (nonatomic, strong) AVAudioRecorder *recorder;
 @property (nonatomic, strong) NXVoiceWaveView *voiceWaveView;
 @property (nonatomic, strong) UIView *voiceWaveParentView;
+@property (nonatomic, strong) NXVoiceWaveView *voiceWaveView2;
+@property (nonatomic, strong) UIView *voiceWaveParentView2;
 @property (nonatomic, strong) NSTimer *updateVolumeTimer;
 @property (nonatomic, strong) UIButton *voiceWaveShowButton;
 @end
@@ -26,8 +28,9 @@
 - (void)dealloc
 {
     [_voiceWaveView removeFromParent];
-//    [_loadingView stopLoading];
     _voiceWaveView = nil;
+    [_voiceWaveView2 removeFromParent];
+    _voiceWaveView2 = nil;
 }
 
 - (void)viewDidLoad {
@@ -40,8 +43,10 @@
     [self.view insertSubview:self.voiceWaveParentView atIndex:0];
     [self.voiceWaveView showInParentView:self.voiceWaveParentView];
     [self.voiceWaveView startVoiceWave];
-//    self.voiceWaveView.beginX = 20;
-//    self.voiceWaveView.waveWidth = CGRectGetWidth(self.voiceWaveView.frame) - 2 * self.voiceWaveView.beginX;
+    
+    [self.view insertSubview:self.voiceWaveParentView2 atIndex:1];
+    [self.voiceWaveView2 showInParentView:self.voiceWaveParentView2];
+    [self.voiceWaveView2 startVoiceWave];
     
     [[NSRunLoop currentRunLoop] addTimer:self.updateVolumeTimer forMode:NSRunLoopCommonModes];
     
@@ -59,6 +64,7 @@
     //dB = 20*log(normalizedValue),分贝计算公式
     CGFloat normalizedValue = pow (10, [self.recorder averagePowerForChannel:0] / 20);
     [_voiceWaveView changeVolume:normalizedValue];
+    [_voiceWaveView2 changeVolume:normalizedValue*0.9];
 }
 
 - (void)voiceWaveShowButtonTouched:(UIButton *)sender
@@ -67,11 +73,14 @@
     [sender setImage:[UIImage imageNamed:_isSilence?@"btn_voice2.png":@"btn_voice1.png"] forState:UIControlStateNormal];
     if (_isSilence) {
         [self.voiceWaveView stopVoiceWave];
+        [self.voiceWaveView2 stopVoiceWave];
         [self.updateVolumeTimer invalidate];
         _updateVolumeTimer = nil;
     }else {
         [self.voiceWaveView showInParentView:self.voiceWaveParentView];
         [self.voiceWaveView startVoiceWave];
+        [self.voiceWaveView2 showInParentView:self.voiceWaveParentView2];
+        [self.voiceWaveView2 startVoiceWave];
         [[NSRunLoop currentRunLoop] addTimer:self.updateVolumeTimer forMode:NSRunLoopCommonModes];
     }
 }
@@ -120,6 +129,28 @@
     }
     
     return _voiceWaveParentView;
+}
+
+- (NXVoiceWaveView *)voiceWaveView2
+{
+    if (!_voiceWaveView2) {
+        self.voiceWaveView2 = [[NXVoiceWaveView alloc] init];
+//        self.voiceWaveView2.fillShapeColor = [UIColor colorFromHexString:@"#E6F7FF"];
+        self.voiceWaveView2.fillShapeColor = [UIColor blueColor];
+    }
+    
+    return _voiceWaveView2;
+}
+
+- (UIView *)voiceWaveParentView2 {
+    if (!_voiceWaveParentView2) {
+        self.voiceWaveParentView2 = [[UIView alloc] init];
+        CGSize screenSize = [UIScreen mainScreen].bounds.size;
+        CGFloat originX = 30;
+        _voiceWaveParentView2.frame = CGRectMake(originX, 0, screenSize.width - 2*originX, 320);
+    }
+    
+    return _voiceWaveParentView2;
 }
 
 - (UIButton *)voiceWaveShowButton

@@ -367,7 +367,7 @@ static CGFloat phaseShift = -0.22;
     if (!_secondLine) {
         self.secondLine = [[UIImageView alloc] init];
         _secondLine.layer.masksToBounds = YES;
-        _secondLine.alpha = 0.6;
+//        _secondLine.alpha = 0.6;
     }
     return _secondLine;
 }
@@ -376,7 +376,7 @@ static CGFloat phaseShift = -0.22;
     if (!_fillLayerImage) {
         self.fillLayerImage = [[UIImageView alloc] init];
         _fillLayerImage.layer.masksToBounds = YES;
-        _fillLayerImage.alpha = 0.2;
+        _fillLayerImage.alpha = 0.3;
     }
     return _fillLayerImage;
 }
