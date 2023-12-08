@@ -11,6 +11,7 @@
 #define voiceWaveDisappearDuration 0.25
 #define minVolume 0.05
 static NSRunLoop* _voiceWaveRunLoop;
+static CGFloat phaseShift = -0.22;
 
 #pragma mark - NXVolumeQueue
 @interface NXVolumeQueue()
@@ -107,7 +108,7 @@ static NSRunLoop* _voiceWaveRunLoop;
     _idleAmplitude = 0.01f;
     
     _phase = 0.0f;
-    _phaseShift = -0.22f;
+    _phaseShift = phaseShift;
     _density = 1.f;
     
     _waveHeight = CGRectGetHeight(self.bounds);
@@ -249,6 +250,7 @@ static NSRunLoop* _voiceWaveRunLoop;
     CGFloat volume = [self.volumeQueue popVolume];
     if (volume > 0) {
         _middleVolume = volume;
+        _phaseShift = phaseShift - _middleVolume/3;
     }else {
         _middleVolume -= 0.01;
     }
