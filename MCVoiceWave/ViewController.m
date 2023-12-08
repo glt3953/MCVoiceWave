@@ -1,20 +1,21 @@
 //
 //  ViewController.m
-//  MCVoiceWave
+//  NXVoiceWave
 //
 //  Created by 朱进林 on 10/8/16.
 //  Copyright © 2016 Martin Choo. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "MCVoiceWaveView.h"
+#import "NXVoiceWaveView.h"
 #import <AVFoundation/AVFoundation.h>
+#import "UIColor+NingXia.h"
 
 @interface ViewController (){
     BOOL _isSilence;
 }
 @property (nonatomic, strong) AVAudioRecorder *recorder;
-@property (nonatomic, strong) MCVoiceWaveView *voiceWaveView;
+@property (nonatomic, strong) NXVoiceWaveView *voiceWaveView;
 @property (nonatomic, strong) UIView *voiceWaveParentView;
 @property (nonatomic, strong) NSTimer *updateVolumeTimer;
 @property (nonatomic, strong) UIButton *voiceWaveShowButton;
@@ -39,6 +40,8 @@
     [self.view insertSubview:self.voiceWaveParentView atIndex:0];
     [self.voiceWaveView showInParentView:self.voiceWaveParentView];
     [self.voiceWaveView startVoiceWave];
+//    self.voiceWaveView.beginX = 20;
+//    self.voiceWaveView.waveWidth = CGRectGetWidth(self.voiceWaveView.frame) - 2 * self.voiceWaveView.beginX;
     
     [[NSRunLoop currentRunLoop] addTimer:self.updateVolumeTimer forMode:NSRunLoopCommonModes];
     
@@ -98,10 +101,11 @@
 
 #pragma mark - getters
 
-- (MCVoiceWaveView *)voiceWaveView
+- (NXVoiceWaveView *)voiceWaveView
 {
     if (!_voiceWaveView) {
-        self.voiceWaveView = [[MCVoiceWaveView alloc] init];
+        self.voiceWaveView = [[NXVoiceWaveView alloc] init];
+        self.voiceWaveView.fillShapeColor = [UIColor colorFromHexString:@"#853DFF"];
     }
     
     return _voiceWaveView;

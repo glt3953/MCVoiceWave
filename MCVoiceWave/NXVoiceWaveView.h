@@ -21,6 +21,8 @@
 #pragma mark - HHVoiceWaveView
 @interface NXVoiceWaveView : UIView
 
+@property (nonatomic) CGFloat beginX;//波纹开始坐标
+@property (nonatomic) CGFloat waveWidth;//波形图所在view的宽
 @property (nonatomic, strong) UIColor *fillShapeColor;
 
 /**

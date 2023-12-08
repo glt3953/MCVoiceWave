@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A1247052B22C491002D40D3 /* NXVoiceWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247032B22C491002D40D3 /* NXVoiceWaveView.m */; };
+		5A12470B2B22C625002D40D3 /* UIImage+NingXia.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247082B22C625002D40D3 /* UIImage+NingXia.m */; };
+		5A12470C2B22C625002D40D3 /* UIColor+NingXia.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247092B22C625002D40D3 /* UIColor+NingXia.m */; };
 		5B826BF91DA88EE60050651F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B826BF81DA88EE60050651F /* main.m */; };
 		5B826BFC1DA88EE60050651F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B826BFB1DA88EE60050651F /* AppDelegate.m */; };
 		5B826BFF1DA88EE60050651F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B826BFE1DA88EE60050651F /* ViewController.m */; };
@@ -45,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A1247032B22C491002D40D3 /* NXVoiceWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXVoiceWaveView.m; sourceTree = "<group>"; };
+		5A1247042B22C491002D40D3 /* NXVoiceWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXVoiceWaveView.h; sourceTree = "<group>"; };
+		5A1247072B22C625002D40D3 /* UIColor+NingXia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NingXia.h"; sourceTree = "<group>"; };
+		5A1247082B22C625002D40D3 /* UIImage+NingXia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NingXia.m"; sourceTree = "<group>"; };
+		5A1247092B22C625002D40D3 /* UIColor+NingXia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NingXia.m"; sourceTree = "<group>"; };
+		5A12470A2B22C625002D40D3 /* UIImage+NingXia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NingXia.h"; sourceTree = "<group>"; };
 		5B826BF41DA88EE50050651F /* MCVoiceWave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCVoiceWave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B826BF81DA88EE60050651F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B826BFA1DA88EE60050651F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +108,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A1247062B22C625002D40D3 /* CategoryUI */ = {
+			isa = PBXGroup;
+			children = (
+				5A1247072B22C625002D40D3 /* UIColor+NingXia.h */,
+				5A1247082B22C625002D40D3 /* UIImage+NingXia.m */,
+				5A1247092B22C625002D40D3 /* UIColor+NingXia.m */,
+				5A12470A2B22C625002D40D3 /* UIImage+NingXia.h */,
+			);
+			path = CategoryUI;
+			sourceTree = "<group>";
+		};
 		5B826BEB1DA88EE50050651F = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +142,9 @@
 		5B826BF61DA88EE60050651F /* MCVoiceWave */ = {
 			isa = PBXGroup;
 			children = (
+				5A1247062B22C625002D40D3 /* CategoryUI */,
+				5A1247042B22C491002D40D3 /* NXVoiceWaveView.h */,
+				5A1247032B22C491002D40D3 /* NXVoiceWaveView.m */,
 				5B826BFA1DA88EE60050651F /* AppDelegate.h */,
 				5B826BFB1DA88EE60050651F /* AppDelegate.m */,
 				5B826C031DA88EE60050651F /* Assets.xcassets */,
@@ -242,7 +265,8 @@
 		5B826BEC1DA88EE50050651F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "Martin Choo";
 				TargetAttributes = {
 					5B826BF31DA88EE50050651F = {
@@ -260,7 +284,7 @@
 			};
 			buildConfigurationList = 5B826BEF1DA88EE50050651F /* Build configuration list for PBXProject "MCVoiceWave" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -321,8 +345,11 @@
 			files = (
 				5B826C2C1DA88FBF0050651F /* MCVoiceWaveView.m in Sources */,
 				5B826BFF1DA88EE60050651F /* ViewController.m in Sources */,
+				5A12470B2B22C625002D40D3 /* UIImage+NingXia.m in Sources */,
 				5B826BFC1DA88EE60050651F /* AppDelegate.m in Sources */,
+				5A1247052B22C491002D40D3 /* NXVoiceWaveView.m in Sources */,
 				5B826BF91DA88EE60050651F /* main.m in Sources */,
+				5A12470C2B22C625002D40D3 /* UIColor+NingXia.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,18 +408,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -400,6 +439,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -414,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -426,18 +466,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -445,6 +497,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -453,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,7 +519,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MCVoiceWave/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vh.anxin-net.com.Martin.MCVoiceWave";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -477,7 +533,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MCVoiceWave/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vh.anxin-net.com.Martin.MCVoiceWave";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -488,7 +547,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MCVoiceWaveTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vh.anxin-net.com.Martin.MCVoiceWaveTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCVoiceWave.app/MCVoiceWave";
@@ -500,7 +563,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MCVoiceWaveTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vh.anxin-net.com.Martin.MCVoiceWaveTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCVoiceWave.app/MCVoiceWave";
@@ -511,7 +578,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = MCVoiceWaveUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vh.anxin-net.com.Martin.MCVoiceWaveUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = MCVoiceWave;
@@ -522,7 +593,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = MCVoiceWaveUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vh.anxin-net.com.Martin.MCVoiceWaveUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = MCVoiceWave;
@@ -548,6 +623,7 @@
 				5B826C231DA88EE60050651F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B826C241DA88EE60050651F /* Build configuration list for PBXNativeTarget "MCVoiceWaveTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +632,7 @@
 				5B826C261DA88EE60050651F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B826C271DA88EE60050651F /* Build configuration list for PBXNativeTarget "MCVoiceWaveUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +641,7 @@
 				5B826C291DA88EE60050651F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

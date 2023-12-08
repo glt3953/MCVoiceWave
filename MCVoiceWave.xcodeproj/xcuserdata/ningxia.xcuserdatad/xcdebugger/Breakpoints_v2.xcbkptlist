@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1EE072C8-3DD5-4043-884D-70F096EF48BD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16B2880C-62A6-4126-AC44-B536B036519F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MCVoiceWave/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-didReceiveMemoryWarning"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "16B2880C-62A6-4126-AC44-B536B036519F - 1264de6ef3357744"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController addVoiceWaveView]"
+                  moduleName = "MCVoiceWave"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ningxia/glt3953&apos;s%20Github/MCVoiceWave/MCVoiceWave/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "16B2880C-62A6-4126-AC44-B536B036519F - ea71d36e76c4816"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController didReceiveMemoryWarning]"
+                  moduleName = "MCVoiceWave"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ningxia/glt3953&apos;s%20Github/MCVoiceWave/MCVoiceWave/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C86688B3-CD9C-45C5-944F-7A3D7D46B1B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MCVoiceWave/NXVoiceWaveView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-setup"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
